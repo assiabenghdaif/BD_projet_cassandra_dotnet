@@ -1,0 +1,47 @@
+CREATE KEYSPACE IF NOT EXISTS artists WITH REPLICATION ={ 'class' : 'SimpleStrategy', 'replication_factor': 3 };
+use artists;
+
+CREATE TABLE artists(ID UUID,Stage_Name VARCHAR, Full_Name VARCHAR,Date_of_Birth VARCHAR, Original_group VARCHAR, Debut VARCHAR,Company VARCHAR, Country VARCHAR,Height INT,Weight INT,Birthplace VARCHAR,Gender VARCHAR,song MAP<text, text>,PRIMARY KEY (ID)) ;
+
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Jimin','Park Jimin','13/10/1995','BTS','3/17/2023','Big Hit','South Korea',175,61,'Busan','M',{'Closer Than This':'FdfoHB5ogns'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Jin','Kim Seokjin','4/12/1992','BTS', '2022-10-28','Big Hit','South Korea',179,63,'Gwacheon','M',{'The Astronaut':'c6ASQOwKkhk'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Jungkook','Jeon Jungkook','1/9/1997','BTS','13/06/2013','Big Hit','South Korea',178,66,'Busan','M',{'3D':'Z3x9i7njCCo'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'RM','Kim Namjoon','12/9/1994','BTS','3/17/2015','Big Hit','South Korea',181,67,'Ilsan','M',{'Still Life':'2vfmL4q2koo'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Agust D ','Min Yoongi','9/3/1993','BTS','8/16/2016','Big Hit','South Korea',176,59,'Daegu','M',{'Daechwita':'qGjAWJ2zWWI'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'V','Kim Taehyung','30/12/1995','BTS','1/30/2019','Big Hit','South Korea',179,62,'Daegu','M',{'Christmas Tree':'lj8TV9q59P4'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'J-Hope','Jung Hoseok','18/02/1994','BTS','3/2/2018','Big Hit','South Korea',177,65,'Gwangju','M',{'On the street':'r6WbbU_lLCA'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Birthplace,Gender,song)
+values(Uuid(),'PSY','Park Jaesang','31/12/1977','solo','12/2/2001','P Nation','South Korea',173,'Seoul','M',{'Gangnam Style':'9bZkp7q19f0'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Lisa','Pranpriya Manoban','27/03/1997','BLACKPINK','9/10/2021','YG','Thailand',170,46,'Bangkok','F',{'MONEY':'dNCWe_6HAM8'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Jennie','Kim Jennie','16/01/1996','BLACKPINK',  '2018-11-12','YG','South Korea',163,50,'Anyang','F',{'You & Me':'eQNHDV7lKgE'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Birthplace,Gender,song)
+values(Uuid(),'Rosé','Roseanne Park','11/2/1997','BLACKPINK','3/12/2021','YG','South Korea',167,'Auckland','F',{'Gone':'K9_VFxzCuQ0'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Jisoo','Kim Jisoo','3/1/1995','BLACKPINK','3/31/2023','YG','South Korea',162,45,'Seoul','F',{'FLOWER':'YudHcBIxlYw'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Birthplace,Gender,song)
+values(Uuid(),'IU','Lee Jieun','16/05/1993','solo','18/09/2008','Edam Entertainment','South Korea',162,'Seoul','F',{'Celebrity':'0-q1KafFCLU'});
+
+insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
+values(Uuid(),'Zico','Woo Jiho','14/09/1992','Block B','15/04/2011','KQ','South Korea',182,65,'Seoul','M',{'Any song':'UuV2BmJ1p_I'});
