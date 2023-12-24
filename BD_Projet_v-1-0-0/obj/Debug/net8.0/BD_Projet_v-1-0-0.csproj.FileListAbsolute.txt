@@ -36,3 +36,42 @@ D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_Projet_v-1-0-0\
 D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.pdb
 D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.genruntimeconfig.cache
 D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_Projet_v-1-0-0\obj\Debug\net8.0\ref\BD_Projet_v-1-0-0.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\appsettings.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.staticwebassets.runtime.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.exe
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.deps.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.runtimeconfig.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.pdb
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\Cassandra.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\System.Management.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.AssemblyReference.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.AssemblyInfoInputs.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.AssemblyInfo.cs
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.CoreCompileInputs.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.RazorAssemblyInfo.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.RazorAssemblyInfo.cs
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.sourcelink.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.BD_Projet_v-1-0-0.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.build.BD_Projet_v-1-0-0.props
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BD_Projet_v-1-0-0.props
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BD_Projet_v-1-0-0.props
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\bundle\BD_Projet_v-1-0-0.styles.css
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\projectbundle\BD_Projet_v-1-0-0.bundle.scp.css
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.CopyComplete
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\refint\BD_Projet_v-1-0-0.dll
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.pdb
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.genruntimeconfig.cache
+C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\ref\BD_Projet_v-1-0-0.dll

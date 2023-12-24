@@ -2,7 +2,28 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section class="hero-section" id="section_1">
+    <div class="section-overlay"></div>
+
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="row">
+
+            <div class="col-12 mt-auto mb-5 text-center">
+                <small>K-Pop for All Presents</small>
+
+                <h1 class="text-white mb-5">All K-Pop songs</h1>
+
+                <a class="btn custom-btn smoothscroll" href="#section_2">SingIn</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="video-wrap">
+        <video autoplay="" loop="" muted="" class="custom-video" poster="">
+            <source src="~/video/pexels-2022395.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</section>
