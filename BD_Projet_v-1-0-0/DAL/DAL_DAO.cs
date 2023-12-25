@@ -12,7 +12,7 @@ namespace DAL{
                 Artists artist=new Artists();
                 
 
-                var rs = session.Execute("SELECT * FROM artists.artists");
+                var rs = session.Execute("SELECT * FROM artists");
                 foreach (var row in rs)
                 {
                     artist=new Artists();
