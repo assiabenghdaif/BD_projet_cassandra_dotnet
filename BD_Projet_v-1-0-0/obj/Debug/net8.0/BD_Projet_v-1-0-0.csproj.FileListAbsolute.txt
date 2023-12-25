@@ -75,3 +75,42 @@ C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj
 C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.pdb
 C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.genruntimeconfig.cache
 C:\Users\H2_ha\Documents\GitHub\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\ref\BD_Projet_v-1-0-0.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\appsettings.Development.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\appsettings.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.staticwebassets.runtime.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.exe
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\Cassandra.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\K4os.Compression.LZ4.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\System.CodeDom.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\System.Management.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.0\System.Management.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.AssemblyReference.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.GeneratedMSBuildEditorConfig.editorconfig
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.AssemblyInfoInputs.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.AssemblyInfo.cs
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.CoreCompileInputs.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.MvcApplicationPartsAssemblyInfo.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.RazorAssemblyInfo.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.RazorAssemblyInfo.cs
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.sourcelink.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.build.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.development.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.BD_Projet_v-1-0-0.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.build.BD_Projet_v-1-0-0.props
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BD_Projet_v-1-0-0.props
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BD_Projet_v-1-0-0.props
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\staticwebassets.pack.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\bundle\BD_Projet_v-1-0-0.styles.css
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\scopedcss\projectbundle\BD_Projet_v-1-0-0.bundle.scp.css
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.csproj.CopyComplete
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\refint\BD_Projet_v-1-0-0.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.pdb
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.deps.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.runtimeconfig.json
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.dll
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\bin\Debug\net8.0\BD_Projet_v-1-0-0.pdb
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\BD_Projet_v-1-0-0.genruntimeconfig.cache
+D:\Assia Benghdaif\Desktop\semesters\semester9\BigData\Projet\BD_projet_cassandra_dotnet\BD_Projet_v-1-0-0\obj\Debug\net8.0\ref\BD_Projet_v-1-0-0.dll

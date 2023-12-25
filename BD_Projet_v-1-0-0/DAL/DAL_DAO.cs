@@ -1,51 +1,121 @@
 using System.Data;
+using System.Text.Json;
+using System.Text.Json.Serialization;
+using BD_Projet_v_1_0_0.Models;
+using Cassandra.Data.Linq;
 
 namespace DAL{
     class DAL_DAO : DbConnection{
+        DbConnection connection;
+        public DAL_DAO(){
+            this.connection = new DbConnection();
+        }
          
-       public List<Artists> Getall()
+       public List<Artists> Getall(string table)
         {
             List<Artists> artists = new List<Artists>();
             try
             {
-                DbConnection connection = new DbConnection();
-                Artists artist=new Artists();
                 
-
-                var rs = session.Execute("SELECT * FROM artists");
+                Artists artist;
+                var rs = session.Execute(FindAll(table));
                 foreach (var row in rs)
                 {
-                    artist=new Artists();
-                    //ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song
-                    artist.setId(row.GetValue<string>("ID"));
-                    artist.setId(row.GetValue<string>("Stage_Name"));
-                    artist.setId(row.GetValue<string>("Full_Name"));
-                    artist.setId(row.GetValue<string>("Date_of_Birth"));
-                    artist.setId(row.GetValue<string>("Original_group"));
-                    artist.setId(row.GetValue<string>("Debut"));
-                    artist.setId(row.GetValue<string>("Company"));
-                    artist.setId(row.GetValue<string>("Debut"));
-                    artist.setHeight(row.GetValue<int>("Height"));
-                    artist.setWeight(row.GetValue<int>("Weight"));
-                    artist.setBirthplace(row.GetValue<string>("Birthplace"));
-                    artist.setGender(row.GetValue<string>("Gender"));
-                    artist.setId(row.GetValue<string>("song"));
-                    
+                    artist=new Artists(){
+                        ID=row.GetValue<Guid>("id"),
+                        Stage_Name=row.GetValue<string>("stage_name"),
+                        Full_Name=row.GetValue<string>("full_name"),
+                        Date_of_Birth=row.GetValue<string>("date_of_birth"),
+                        Original_group=row.GetValue<string>("original_group"),
+                        Debut=row.GetValue<string>("debut"),
+                        Company=row.GetValue<string>("company"),
+                        Country=row.GetValue<string>("country"),
+                        Height=row.IsNull("height") ? (int?)null : row.GetValue<int>("height"),
+                        Weight=row.IsNull("weight") ? (int?)null : row.GetValue<int>("weight"),
+                        Birthplace=row.GetValue<string>("birthplace"),
+                        Gender=row.GetValue<string>("gender"),
+                        song=row.GetValue<IDictionary<string,string>>("song")
+                        
+                    };
                     artists.Add(artist);
                 }
-                        
-
                 
-
-
-                return artists;
             }
             catch (Exception ex)
             {
-
-                throw;
+                Console.WriteLine(ex.Message);
             }
+            return artists;
         }
-        
+
+        public void GetBy(in string table,in string key, in string value, out Artists artist,out List<Artists> artists){
+            var query=session.Prepare(FindBy(table,key));
+            artist = null;
+            artists = new List<Artists>();
+            if (key=="id" ) {
+                Guid guidValue = Guid.Parse(value);
+                var row =session.Execute(query.Bind(guidValue)).FirstOrDefault();
+                artist=new Artists(){
+                    ID=row.GetValue<Guid>("id"),
+                    Stage_Name=row.GetValue<string>("stage_name"),
+                    Full_Name=row.GetValue<string>("full_name"),
+                    Date_of_Birth=row.GetValue<string>("date_of_birth"),
+                    Original_group=row.GetValue<string>("original_group"),
+                    Debut=row.GetValue<string>("debut"),
+                    Company=row.GetValue<string>("company"),
+                    Country=row.GetValue<string>("country"),
+                    Height=row.GetValue<int>("height"),
+                    Weight=row.GetValue<int>("weight"),
+                    Birthplace=row.GetValue<string>("birthplace"),
+                    Gender=row.GetValue<string>("gender"),
+                    song=row.GetValue<IDictionary<string,string>>("song")                
+                };
+            }
+            else{
+                var results =session.Execute(query.Bind(value));
+                Artists artists1;
+                foreach (var rs in results)
+                {
+                    artists1=new Artists(){
+                        ID=rs.GetValue<Guid>("id"),
+                        Stage_Name=rs.GetValue<string>("stage_name"),
+                        Full_Name=rs.GetValue<string>("full_name"),
+                        Date_of_Birth=rs.GetValue<string>("date_of_birth"),
+                        Original_group=rs.GetValue<string>("original_group"),
+                        Debut=rs.GetValue<string>("debut"),
+                        Company=rs.GetValue<string>("company"),
+                        Country=rs.GetValue<string>("country"),
+                        Height=rs.GetValue<int>("height"),
+                        Weight=rs.GetValue<int>("weight"),
+                        Birthplace=rs.GetValue<string>("birthplace"),
+                        Gender=rs.GetValue<string>("gender"),
+                        song=rs.GetValue<IDictionary<string,string>>("song")                
+                    };
+                    artists.Add(artists1);
+                }
+            }
+            
+            
+            
+        }
+
+        public bool insert(string table,Artists artists){
+            var prepare=session.Prepare(save(table));
+            var row = session.Execute(prepare.Bind(artists.Stage_Name,artists.Full_Name,artists.Date_of_Birth,artists.Original_group,
+            artists.Debut,artists.Company,artists.Country,artists.Height,artists.Weight,artists.Birthplace,artists.Gender,artists.song));
+            return row==null ? false : true;
+        }
+
+       public bool delete(string table,Guid id){
+        var query = session.Prepare(deleteById(table));
+        var row = session.Execute(query.Bind(id));
+        return row==null ? false : true;
+       } 
+
+       public bool update(string table,string key, string value,Guid id){
+        var query = session.Prepare(update(table,key));
+        var row = session.Execute(query.Bind(value,id));
+        return row==null ? false : true;
+       }
     }
 }
