@@ -44,7 +44,7 @@ namespace BD_Projet_v_1_0_0
                     Artists artist;
                     List<Artists> artists;
                     // dAL_DAO.GetBy("artists","song","Still Life",out artist,out artists); //by song
-                    dAL_DAO.GetBy("artists","id","b52ebd66-47ec-4ae2-9943-3f179acc1022",out artist,out artists); //by id
+                    dAL_DAO.GetBy("artists","id","da8658db-53a7-454a-b69c-ef25f14995ea",out artist,out artists); //by id
                     if(artist==null){
                         foreach (var row in artists)
                         {

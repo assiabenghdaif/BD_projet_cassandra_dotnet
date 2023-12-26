@@ -64,8 +64,8 @@ namespace DAL{
                     Debut=row.GetValue<string>("debut"),
                     Company=row.GetValue<string>("company"),
                     Country=row.GetValue<string>("country"),
-                    Height=row.GetValue<int>("height"),
-                    Weight=row.GetValue<int>("weight"),
+                    Height=row.IsNull("height") ? (int?)null : row.GetValue<int>("height"),
+                    Weight=row.IsNull("weight") ? (int?)null : row.GetValue<int>("weight"),
                     Birthplace=row.GetValue<string>("birthplace"),
                     Gender=row.GetValue<string>("gender"),
                     song=row.GetValue<IDictionary<string,string>>("song")                
@@ -85,8 +85,8 @@ namespace DAL{
                         Debut=rs.GetValue<string>("debut"),
                         Company=rs.GetValue<string>("company"),
                         Country=rs.GetValue<string>("country"),
-                        Height=rs.GetValue<int>("height"),
-                        Weight=rs.GetValue<int>("weight"),
+                        Height=rs.IsNull("height") ? (int?)null : rs.GetValue<int>("height"),
+                        Weight=rs.IsNull("weight") ? (int?)null : rs.GetValue<int>("weight"),
                         Birthplace=rs.GetValue<string>("birthplace"),
                         Gender=rs.GetValue<string>("gender"),
                         song=rs.GetValue<IDictionary<string,string>>("song")                
