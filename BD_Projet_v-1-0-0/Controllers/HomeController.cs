@@ -1,11 +1,13 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BD_Projet_v_1_0_0.Models;
+using DAL;
 
 namespace BD_Projet_v_1_0_0.Controllers;
 
 public class HomeController : Controller
 {
+    DAL_DAO dAL_DAO = new DAL_DAO();
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
@@ -15,11 +17,16 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        return View();
+        List<Artists> artists = dAL_DAO.Getall("Artists");
+        return View(artists);
     }
 
     public IActionResult Privacy()
     {
+        return View();
+    }
+    
+    public IActionResult LogIn(){
         return View();
     }
 
