@@ -37,6 +37,11 @@ namespace DAL
             return "update "+table+" set "+key+" = ? where ID=?";
         }
 
+        public string saveUser(string table){
+            //ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song
+            return "INSERT INTO "+table +" (id,firstname,lastname,username ,password) VALUES(Uuid(),?,?,?,?)";
+        }
+
 
 
 

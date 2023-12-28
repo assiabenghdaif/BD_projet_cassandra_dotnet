@@ -97,5 +97,26 @@ namespace DAL{
         var row = session.Execute(query.Bind(value,id));
         return row==null ? false : true;
        }
+
+       public User getUserByUsername(string table,string key,string value){
+        var query=session.Prepare(FindBy(table,key));
+        var results =session.Execute(query.Bind(value)).FirstOrDefault();
+        if(results!=null)
+        {    return new User{
+                id=results.GetValue<Guid>("id"),
+                firstname=results.GetValue<string>("firstname"),
+                lastname=results.GetValue<string>("lastname"),
+                username=results.GetValue<string>("username"),
+                password=results.GetValue<string>("password")
+            };}
+            return null;
+            
+       }
+
+       public bool addUser(string table,User user){
+        var query=session.Prepare(saveUser(table));
+        var row = session.Execute(query.Bind(user.firstname,user.lastname,user.username,user.password));
+         return row==null ? false : true;
+       }
     }
 }

@@ -45,3 +45,10 @@ values(Uuid(),'IU','Lee Jieun','16/05/1993','solo','18/09/2008','Edam Entertainm
 
 insert into artists(ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song)
 values(Uuid(),'Zico','Woo Jiho','14/09/1992','Block B','15/04/2011','KQ','South Korea',182,65,'Seoul','M',{'Any song':'UuV2BmJ1p_I'});
+
+
+
+#############################################
+user table:
+create table user(id UUID primary key,firstname varchar,lastname varchar,username varchar, password varchar);
+insert into user(id,firstname,lastname,username,password) values (uuid(),'cassandra','projet','admin','admin');

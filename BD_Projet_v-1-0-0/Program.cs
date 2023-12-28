@@ -30,7 +30,7 @@ namespace BD_Projet_v_1_0_0
 
                     app.MapControllerRoute(
                         name: "default",
-                        pattern: "{controller=Home}/{action=Index}/{id?}");
+                        pattern: "{controller=Home}/{action=LogIn}/{id?}");
 
                     DAL_DAO dAL_DAO = new DAL_DAO();
                     Console.WriteLine("get all");
