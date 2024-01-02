@@ -37,6 +37,110 @@
       "PackagePath": "staticwebassets\\css\\bootstrap\\utilities\\_stretched-link.css"
     },
     {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\animate.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\animate.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\css\\css2\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\default-skin.css",
+      "PackagePath": "staticwebassets\\css\\css2\\default-skin.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\font-awesome.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\icomoon.css",
+      "PackagePath": "staticwebassets\\css\\css2\\icomoon.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\css\\css2\\jquery-ui.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\jquery.fancybox.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\jquery.fancybox.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\jquery.mCustomScrollbar.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\jquery.mCustomScrollbar.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\meanmenu.css",
+      "PackagePath": "staticwebassets\\css\\css2\\meanmenu.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\nice-select.css",
+      "PackagePath": "staticwebassets\\css\\css2\\nice-select.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\css2\\normalize.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\css2\\owl.carousel.min.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\css2\\responsive.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\slick.css",
+      "PackagePath": "staticwebassets\\css\\css2\\slick.css"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\css2\\style.css",
+      "PackagePath": "staticwebassets\\css\\css2\\style.css"
+    },
+    {
       "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -53,12 +157,176 @@
       "PackagePath": "staticwebassets\\images\\bg.jpg"
     },
     {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\banner-bg.png",
+      "PackagePath": "staticwebassets\\images\\images2\\banner-bg.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\call-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\call-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\down-arrow.png",
+      "PackagePath": "staticwebassets\\images\\images2\\down-arrow.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\fb-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\fb-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-1.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-1.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-2.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-2.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-3.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-3.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-4.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-4.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-5.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-5.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-6.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-6.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-7.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-7.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\img-8.png",
+      "PackagePath": "staticwebassets\\images\\images2\\img-8.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\instagram-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\instagram-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\linkedin-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\linkedin-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\logo.png",
+      "PackagePath": "staticwebassets\\images\\images2\\logo.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\mail-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\mail-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\map-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\map-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\newsletter-bg.png",
+      "PackagePath": "staticwebassets\\images\\images2\\newsletter-bg.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\review-img-1.png",
+      "PackagePath": "staticwebassets\\images\\images2\\review-img-1.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\review-img-2.png",
+      "PackagePath": "staticwebassets\\images\\images2\\review-img-2.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\review-img-3.png",
+      "PackagePath": "staticwebassets\\images\\images2\\review-img-3.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\shopping-bag.png",
+      "PackagePath": "staticwebassets\\images\\images2\\shopping-bag.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\twitter-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\twitter-icon.png"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\images\\images2\\user-icon.png",
+      "PackagePath": "staticwebassets\\images\\images2\\user-icon.png"
+    },
+    {
       "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
     {
       "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\jquery.min.js",
       "PackagePath": "staticwebassets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\js\\js2\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\custom.js",
+      "PackagePath": "staticwebassets\\js\\js2\\custom.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\jquery-3.0.0.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\jquery-3.0.0.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\jquery.mCustomScrollbar.concat.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\jquery.mCustomScrollbar.concat.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\js\\js2\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\modernizer.js",
+      "PackagePath": "staticwebassets\\js\\js2\\modernizer.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\plugin.js",
+      "PackagePath": "staticwebassets\\js\\js2\\plugin.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\js2\\popper.min.js"
+    },
+    {
+      "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\js2\\slider-setting.js",
+      "PackagePath": "staticwebassets\\js\\js2\\slider-setting.js"
     },
     {
       "Id": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\wwwroot\\js\\main.js",

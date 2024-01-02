@@ -26,6 +26,12 @@ public class HomeController : Controller
         a.Company.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
         a.Gender.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
     .ToList();
+    //row==null ? false : true;
+
+        if (searchTerm!=null) { 
+            ViewBag.SearchPerformed = true ;
+            ViewBag.searchTermV=searchTerm;
+        }
         string username = TempData["username"] as string;
         User user=dAL_DAO.getUserBy("user","username",username);
         myModel.userAuthentifie = user;
@@ -43,6 +49,7 @@ public class HomeController : Controller
         
         return View();
     }
+    
 
     [HttpPost]
     public IActionResult LogIn(string username, string password)
@@ -64,11 +71,7 @@ public class HomeController : Controller
         return password1!=password2 ? false : true;
     }
 
-    public IActionResult Success()
-    {
-        // Your logic for rendering the success view goes here
-        return View("Home");
-    }
+    
 
     public IActionResult SignUp(){
         User user=new User();
