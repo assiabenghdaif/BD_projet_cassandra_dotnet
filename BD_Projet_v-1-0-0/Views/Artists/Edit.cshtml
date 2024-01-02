@@ -1,0 +1,105 @@
+@model Artists;
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">K-Pop for All</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+</header>
+    
+<div class="card w-75 p-3 rounded-4 position-absolute top-50 start-50 translate-middle">
+    <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a class="text" asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+    </ol>
+    </nav>
+    <form class="row g-3" asp-action="Edit">
+        <div class="col-4">
+            <label asp-for="Stage_Name" class="form-label"></label>
+            <input asp-for="Stage_Name" class="form-control user-select-all">
+        </div>
+        <div class="col-4">
+            <label asp-for="Full_Name" class="form-label"></label>
+            <input asp-for="Full_Name" class="form-control user-select-all">
+        </div>
+        <div class="col-4">
+            <label asp-for="Original_group" class="form-label"></label>
+            <input asp-for="Original_group" class="form-control user-select-all">
+        </div>
+        <div class="col-2">
+            <label asp-for="Date_of_Birth" class="form-label"></label>
+            <input asp-for="Date_of_Birth" class="form-control user-select-all"> <!-- type="date" -->
+        </div>
+        <div class="col-3">
+            <label asp-for="Birthplace" class="form-label"></label>
+            <input asp-for="Birthplace" class="form-control user-select-all">
+        </div>
+        <div class="col-2">
+            <label asp-for="Debut" class="form-label"></label>
+            <input asp-for="Debut" class="form-control user-select-all"> <!-- type="date" -->
+        </div>
+        <div class="col-5">
+            <label asp-for="Company" class="form-label"></label>
+            <input asp-for="Company" class="form-control user-select-all">
+        </div>
+        <div class="col-3">
+            <label asp-for="Country" class="form-label"></label>
+            <input asp-for="Country" class="form-control user-select-all">
+        </div>
+        <div class="form-outline col-3">
+            <label asp-for="Height" class="form-label"></label>
+            <div class="input-group">
+                <input asp-for="Height" min="10" max="290" type="number" class="form-control"/>
+                <span class="input-group-text">cm</span>
+            </div>
+        </div>
+        <div class="form-outline col-3">
+            <label asp-for="Weight" class="form-label"></label>
+            <div class="input-group">
+                <input asp-for="Weight" min="20" max="200" type="number" class="form-control"/>
+                <span class="input-group-text">kg</span>
+            </div>
+        </div>
+        <div class="col-3">
+            <label asp-for="Gender" class="form-label"></label>
+            <select class="form-select" asp-for="Gender">
+                <option selected>Choose...</option>
+                <option value="M" selected=@(Model.Gender=="M")>Male</option>
+                <option value="F" selected=@(Model.Gender=="F")>Female</option>
+            </select>
+        </div>
+        <div class="form-outline col-12">
+            <label asp-for="song" class="form-labe border-bottom"></label>
+            @for (int i = 0; i < Model.song.Count; i++){
+                <div class="input-group col-4">
+                    <span class="input-group-text">@Model.song.ElementAt(i).Key</span>
+                    <input asp-for="@Model.song.ElementAt(i).Value" value=@Model.song.ElementAt(i).Value class="form-control"/>
+                </div>
+            }
+        </div>
+        <div class="col-12">
+            <button type="submit" value="update" class="btn btn-primary">Save</button>
+        </div>
+    </form>
+</div>
+
+<footer class="border-top footer text-muted position-absolute bottom-0">
+    <div class="container">
+        &copy; 2023 - K-Pop for All - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    </div>
+</footer> 
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

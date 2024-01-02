@@ -1,9 +1,11 @@
-﻿@model List<Artists>
+﻿
+@model IndexViewModel
+
     @{
     int pageSize = 5;
     int pageNumber = !string.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["page"]) ? Convert.ToInt32(ViewContext.HttpContext.Request.Query["page"]) : 1;
-    var artistsOnCurrentPage = Model.Skip((pageNumber - 1) * pageSize).Take(pageSize);
-}
+    var artistsOnCurrentPage = Model.artists.Skip((pageNumber - 1) * pageSize).Take(pageSize);
+    }
 
 <!DOCTYPE html>
 <html lang="en">
@@ -141,64 +143,89 @@ $(document).ready(function(){
 });
 </script>
 </head>
-<body style="background-image: url('@Url.Content("~/images/bg.jpg")');">
-<div class="container-xl">
-    <div class="table-responsive">
-        <div class="table-wrapper">
-            <div class="table-title">
-                <div class="row">
-                    <div class="col-sm-8"><h2>Artists <b>Details</b></h2></div>
-                    <div class="col-sm-4">
-                        <div class="search-box">
-                            <i class="material-icons">&#xE8B6;</i>
-                            <input type="text" class="form-control" placeholder="Search&hellip;">
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">K-Pop for All</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-xl position-absolute top-50 start-50 translate-middle">
+        <div class="table-responsive">
+            <div class="table-wrapper">
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-8"><h2>Artists <b>Details</b></h2></div>
+                        <div class="col-sm-4">
+                            <form method="get" asp-action="Index" asp-controller="Home">
+                                <div class="search-box">
+                                    <i class="material-icons">&#xE8B6;</i>
+                                    <input type="text" class="form-control" name="searchTerm" placeholder="Search&hellip;">
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-            <table class="table table-striped table-hover table-bordered">
-                <thead>
-                    <tr>
-                        <!-- Stage Name -->
-                        <th> Stage Name </th>
-                        <th> Full Name </th>
-                        <th> Original group </i></th>
-                        <th> Company </th>
-                        <th> Gender </th>
-                        <th> Actions </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach (var artist in artistsOnCurrentPage)
-                    {
+                <table class="table table-striped table-hover table-bordered">
+                    <thead>
                         <tr>
-                            <td>@artist.Stage_Name</td>
-                            <td>@artist.Full_Name</td>
-                            <td>@artist.Original_group</td>
-                            <td>@artist.Company</td>
-                            <td>@artist.Gender</td>
-                            <td>
-                                <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
-                                <a href="#" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                            </td>
-                        </tr> 
-                    }
-                </tbody>
-            </table>
-            <div class="clearfix">
-                <div class="hint-text">Showing <b>@artistsOnCurrentPage.Count()</b> out of <b>@Model.Count()</b> entries</div>
-                <ul class="pagination">
-                    @for (int i = 1; i <= (int)Math.Ceiling((double)Model.Count() / pageSize); i++)
-                    {
-                        <li class="page-item @(i == pageNumber ? "active" : "")">
-                            <a href="?page=@i" class="page-link">@i</a>
-                        </li>
-                    }
-                </ul>
+                            <!-- Stage Name -->
+                            <th> Stage Name </th>
+                            <th> Full Name </th>
+                            <th> Original group </i></th>
+                            <th> Company </th>
+                            <th> Gender </th>
+                            <th> Actions </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var artist in artistsOnCurrentPage)
+                        {
+                            <tr>
+                                <td>@artist.Stage_Name</td>
+                                <td>@artist.Full_Name</td>
+                                <td>@artist.Original_group</td>
+                                <td>@artist.Company</td>
+                                <td>@artist.Gender</td>
+                                <td>
+                                    <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                                    @if (Model.userAuthentifie.username != "admin"){
+                                        <a href="#" class="favorite" title="favorite" data-toggle="tooltip"><i class="material-icons">favorite_border</i></a>
+                                    }
+                                    @if (Model.userAuthentifie.username == "admin"){
+                                        <a asp-controller="Artists" asp-action="Edit" asp-route-id="@artist.ID" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                    }
+                                </td>
+                            </tr> 
+                        }
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    <div class="hint-text">Showing <b>@artistsOnCurrentPage.Count()</b> out of <b>@Model.artists.Count()</b> entries</div>
+                    <ul class="pagination">
+                        @for (int i = 1; i <= (int)Math.Ceiling((double)Model.artists.Count() / pageSize); i++)
+                        {
+                            <li class="page-item @(i == pageNumber ? "active" : "")">
+                                <a href="?page=@i" class="page-link">@i</a>
+                            </li>
+                        }
+                    </ul>
+                </div>
             </div>
+        </div>  
+    </div> 
+
+    <footer class="border-top footer text-muted position-absolute bottom-0">
+        <div class="container">
+            &copy; 2023 - K-Pop for All - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
-    </div>  
-</div>   
+    </footer>  
 </body>
 </html>

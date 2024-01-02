@@ -1,6 +1,3 @@
-
-using BD_Projet_v_1_0_0.Models;
-
 namespace DAL
 {
     class DbConnection
@@ -41,10 +38,6 @@ namespace DAL
             //ID,Stage_Name,Full_Name,Date_of_Birth,Original_group,Debut,Company,Country,Height,Weight,Birthplace,Gender,song
             return "INSERT INTO "+table +" (id,firstname,lastname,username ,password) VALUES(Uuid(),?,?,?,?)";
         }
-
-
-
-
             
     }
 }

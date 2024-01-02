@@ -3659,19 +3659,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\H2_ha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
+      "projectUniqueName": "C:\\Users\\H2_ha\\Documents\\GitHub\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
       "projectName": "BD_Projet_v-1-0-0",
-      "projectPath": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\obj\\",
+      "projectPath": "C:\\Users\\H2_ha\\Documents\\GitHub\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
+      "packagesPath": "C:\\Users\\H2_ha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\H2_ha\\Documents\\GitHub\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\H2_ha\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"

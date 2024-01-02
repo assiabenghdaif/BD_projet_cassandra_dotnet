@@ -2,7 +2,7 @@ using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using BD_Projet_v_1_0_0.Models;
 using DAL;
-using System.Text;
+using System.Dynamic;
 
 namespace BD_Projet_v_1_0_0.Controllers;
 
@@ -16,10 +16,18 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
-    {
-        List<Artists> artists = dAL_DAO.Getall("Artists");
-        return View(artists);
+    public IActionResult Index(string searchTerm, User user)
+    {   List<Artists> nosArtists = dAL_DAO.Getall("Artists");
+        IndexViewModel myModel = new IndexViewModel();
+        myModel.artists = string.IsNullOrEmpty(searchTerm) ? nosArtists : nosArtists.Where(a =>
+        a.Stage_Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+        a.Full_Name.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+        a.Original_group.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+        a.Company.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
+        a.Gender.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
+    .ToList();
+        myModel.userAuthentifie = user;
+        return View(myModel);
     }
 
     public IActionResult Privacy()
@@ -31,12 +39,14 @@ public class HomeController : Controller
         User user1=new User();
         return View(user1);
     }
+
     [HttpPost]
     public ActionResult LogIn(string username, string password)
     {
-        User user1=dAL_DAO.getUserByUsername("user","username",username);
+        User user1=dAL_DAO.getUserBy("user","username",username);
         if (user1 != null && VerifPassword(user1.password,password)){
-            return RedirectToAction("Index");
+            
+            return RedirectToAction("Index","Home", user1);
         }
         ViewBag.Message = "UserName or password is wrong";
         return View("LogIn");

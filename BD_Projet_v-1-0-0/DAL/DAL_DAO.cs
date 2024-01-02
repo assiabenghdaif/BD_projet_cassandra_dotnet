@@ -1,6 +1,3 @@
-using System.Data;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using BD_Projet_v_1_0_0.Models;
 using Cassandra.Data.Linq;
 
@@ -92,13 +89,13 @@ namespace DAL{
         return row==null ? false : true;
        } 
 
-       public bool update(string table,string key, string value,Guid id){
+       public bool update(string table,string key, object? value,Guid id){
         var query = session.Prepare(update(table,key));
         var row = session.Execute(query.Bind(value,id));
         return row==null ? false : true;
        }
 
-       public User getUserByUsername(string table,string key,string value){
+       public User getUserBy(string table,string key,string value){
         var query=session.Prepare(FindBy(table,key));
         var results =session.Execute(query.Bind(value)).FirstOrDefault();
         if(results!=null)
@@ -113,7 +110,7 @@ namespace DAL{
             
        }
 
-       public bool addUser(string table,User user){
+       public bool addUser(string table, User user){
         var query=session.Prepare(saveUser(table));
         var row = session.Execute(query.Bind(user.firstname,user.lastname,user.username,user.password));
          return row==null ? false : true;
