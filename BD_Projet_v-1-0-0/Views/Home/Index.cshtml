@@ -1,11 +1,11 @@
 ﻿
-@model IndexViewModel
+@model BD_Projet_v_1_0_0.Models.IndexViewModel
 
-    @{
+@{
     int pageSize = 5;
     int pageNumber = !string.IsNullOrEmpty(ViewContext.HttpContext.Request.Query["page"]) ? Convert.ToInt32(ViewContext.HttpContext.Request.Query["page"]) : 1;
     var artistsOnCurrentPage = Model.artists.Skip((pageNumber - 1) * pageSize).Take(pageSize);
-    }
+}
 
 <!DOCTYPE html>
 <html lang="en">

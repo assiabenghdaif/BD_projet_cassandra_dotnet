@@ -16,7 +16,7 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index(string searchTerm, User user)
+    public IActionResult Index(string searchTerm)
     {   List<Artists> nosArtists = dAL_DAO.Getall("Artists");
         IndexViewModel myModel = new IndexViewModel();
         myModel.artists = string.IsNullOrEmpty(searchTerm) ? nosArtists : nosArtists.Where(a =>
@@ -26,7 +26,11 @@ public class HomeController : Controller
         a.Company.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
         a.Gender.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
     .ToList();
+        string username = TempData["username"] as string;
+        User user=dAL_DAO.getUserBy("user","username",username);
         myModel.userAuthentifie = user;
+        TempData["username"]=username;
+        Console.WriteLine( myModel.userAuthentifie.username);
         return View(myModel);
     }
 
@@ -36,17 +40,19 @@ public class HomeController : Controller
     }
     
     public IActionResult LogIn(){
-        User user1=new User();
-        return View(user1);
+        
+        return View();
     }
 
     [HttpPost]
-    public ActionResult LogIn(string username, string password)
+    public IActionResult LogIn(string username, string password)
     {
         User user1=dAL_DAO.getUserBy("user","username",username);
         if (user1 != null && VerifPassword(user1.password,password)){
-            
-            return RedirectToAction("Index","Home", user1);
+            // IndexViewModel myModel=new IndexViewModel();
+            // myModel.userAuthentifie=user1;
+            TempData["username"] =username;
+            return RedirectToAction("Index","Home");
         }
         ViewBag.Message = "UserName or password is wrong";
         return View("LogIn");

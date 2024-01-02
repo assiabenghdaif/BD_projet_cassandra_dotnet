@@ -16,7 +16,7 @@ public class ArtistsController : Controller {
     
     [HttpPost]
     [ValidateAntiForgeryToken]
-    public IActionResult Edit(Artists artist)
+    public IActionResult Edit(Artists artist,IndexViewModel myModel)
     {
         try{
             if (artist != null){
@@ -34,6 +34,10 @@ public class ArtistsController : Controller {
                 //dAL_DAO.update("Artists", "song", artist.song, artist.ID);
                 Console.WriteLine("liste des songs:" + artist.song);
             }
+            string username = TempData["username"] as string;
+            User user=dAL_DAO.getUserBy("user","username",username);
+            myModel.userAuthentifie = user;
+     
             return RedirectToAction("Index", "Home");
         }catch{
             return View();
