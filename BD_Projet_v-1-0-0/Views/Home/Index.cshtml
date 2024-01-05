@@ -17,9 +17,16 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 <style>
 body {
     color: #566787;
@@ -161,7 +168,10 @@ $(document).ready(function(){
             <div class="table-wrapper">
                 <div class="table-title">
                     <div class="row">
-                        <div class="col-sm-8"><h2>Artists <b>Details</b></h2></div>
+                        <div class="col-sm-8">
+                            <h2>Artists <b>Details</b></h2>
+                        </div>
+                         
                         <div class="col-sm-4">
                             <form method="get" asp-action="Index" asp-controller="Home">
                                 <div class="search-box">
@@ -171,6 +181,14 @@ $(document).ready(function(){
                             </form>
                         </div>
                     </div>
+                    <div class="row">
+                      <div class="col">
+                        <form action="@Url.Action("Create", "Artists")">
+                          <button type="submit" class="btn btn-success">Create New Artist</button>
+                        </form>
+                      </div>
+                    </div>
+                    
                 </div>
                 <table class="table table-striped table-hover table-bordered">
                     <thead>
@@ -194,13 +212,14 @@ $(document).ready(function(){
                                 <td>@artist.Company</td>
                                 <td>@artist.Gender</td>
                                 <td>
-                                    <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
+                                     <a asp-controller="Artists" asp-action="Details" asp-route-id="@artist.ID" class="view" data-toggle="tooltip" title="View" ><i class="material-icons">&#xE417;</i></a>
                                     @if (Model.userAuthentifie.username != "admin"){
                                         <a href="#" class="favorite" title="favorite" data-toggle="tooltip"><i class="material-icons">favorite_border</i></a>
                                     }
                                     @if (Model.userAuthentifie.username == "admin"){
                                         <a asp-controller="Artists" asp-action="Edit" asp-route-id="@artist.ID" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                                        <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                                        <a asp-controller="Artists" asp-action="Delete" class="delete" title="Delete" asp-route-id="@artist.ID"  onclick="return confirm('Êtes-vous sûr de vouloir supprimer cet artiste ?');");><i class="material-icons">&#xE872;</i></a>
+
                                     }
                                 </td>
                             </tr> 

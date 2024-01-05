@@ -8,6 +8,21 @@ namespace BD_Projet_v_1_0_0.Controllers;
 
 public class ArtistsController : Controller {
     DAL_DAO dAL_DAO = new DAL_DAO();
+
+     public IActionResult Delete(Guid id){
+            dAL_DAO.delete("artists", id);
+            return RedirectToAction("Index", "Home");
+    }
+
+    
+        
+    
+
+    public IActionResult Details(string id){
+        List<Artists> artist = dAL_DAO.GetBy("Artists", "id", id);
+        return View(artist[0]);
+    }
+    
     
     public IActionResult Edit(String id){
         List<Artists> artists = dAL_DAO.GetBy("Artists", "id", id);
@@ -43,6 +58,38 @@ public class ArtistsController : Controller {
             return View();
         }
 
+    }
+        public IActionResult Create()
+{
+       return View();
+}
+    
+    [HttpPost]
+    [ValidateAntiForgeryToken]
+    public IActionResult Create(Artists artist, string key, string youtubeId, IndexViewModel myModel)
+    {
+        try{
+            if (artist != null){;
+                artist.song = new Dictionary<string, string>();
+                artist.song[key]=youtubeId;
+                Console.WriteLine("GHSD"+artist.ToString);
+                bool inserted = dAL_DAO.insert("Artists",artist);
+
+                if(inserted){
+                            string username = TempData["username"] as string;
+                            User user=dAL_DAO.getUserBy("user","username",username);
+                            myModel.userAuthentifie = user;
+     
+                            return RedirectToAction("Index", "Home");
+                }
+                
+            }
+ 
+        }catch{
+            return View();
+          
+        }
+       return View();
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
