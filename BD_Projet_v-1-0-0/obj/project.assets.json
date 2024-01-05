@@ -3659,24 +3659,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\projet_big_data\\Cassandra_dotnet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
       "projectName": "BD_Projet_v-1-0-0",
-      "projectPath": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Assia Benghdaif\\Desktop\\semesters\\semester9\\BigData\\Projet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Desktop\\projet_big_data\\Cassandra_dotnet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\BD_Projet_v-1-0-0.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\projet_big_data\\Cassandra_dotnet\\BD_projet_cassandra_dotnet\\BD_Projet_v-1-0-0\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
