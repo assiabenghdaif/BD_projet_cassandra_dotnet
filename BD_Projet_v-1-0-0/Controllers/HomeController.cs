@@ -26,6 +26,10 @@ public class HomeController : Controller
         a.Company.Contains(searchTerm, StringComparison.OrdinalIgnoreCase) ||
         a.Gender.Contains(searchTerm, StringComparison.OrdinalIgnoreCase))
     .ToList();
+        if (searchTerm!=null) { 
+            ViewBag.SearchPerformed = true ;
+            ViewBag.searchTermV=searchTerm;
+        }
         string username = TempData["username"] as string;
         User user=dAL_DAO.getUserBy("user","username",username);
         myModel.userAuthentifie = user;

@@ -7,6 +7,16 @@
     var artistsOnCurrentPage = Model.artists.Skip((pageNumber - 1) * pageSize).Take(pageSize);
 }
 
+@{
+    bool searchPerformed = ViewBag.SearchPerformed ?? false;
+    var url = "";
+    if (ViewBag.searchTermV != null)
+    {
+        url = "searchTerm=" + ViewBag.searchTermV;
+        // Use the 'url' variable as needed, for example, in a hyperlink or a form action attribute
+    }
+}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,9 +193,11 @@ $(document).ready(function(){
                     </div>
                     <div class="row">
                       <div class="col">
+                        @if (Model.userAuthentifie.username == "admin"){
                         <form action="@Url.Action("Create", "Artists")">
                           <button type="submit" class="btn btn-success">Create New Artist</button>
                         </form>
+                        }
                       </div>
                     </div>
                     
@@ -227,12 +239,13 @@ $(document).ready(function(){
                     </tbody>
                 </table>
                 <div class="clearfix">
+                    
                     <div class="hint-text">Showing <b>@artistsOnCurrentPage.Count()</b> out of <b>@Model.artists.Count()</b> entries</div>
                     <ul class="pagination">
                         @for (int i = 1; i <= (int)Math.Ceiling((double)Model.artists.Count() / pageSize); i++)
                         {
                             <li class="page-item @(i == pageNumber ? "active" : "")">
-                                <a href="?page=@i" class="page-link">@i</a>
+                                 <a href="?page=@i&@url" class="page-link">@i</a>
                             </li>
                         }
                     </ul>
