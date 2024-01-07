@@ -137,12 +137,8 @@ table.table td i {
     font-size: 95%;
 }    
 </style>
-<script>
-$(document).ready(function(){
-	$('[data-toggle="tooltip"]').tooltip();
-});
-</script>
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light border-bottom box-shadow mb-3">
@@ -196,7 +192,8 @@ $(document).ready(function(){
                                 <td>
                                     <a href="#" class="view" title="View" data-toggle="tooltip"><i class="material-icons">&#xE417;</i></a>
                                     @if (Model.userAuthentifie.username != "admin"){
-                                        <a href="#" class="favorite" title="favorite" data-toggle="tooltip"><i class="material-icons">favorite_border</i></a>
+                                        <a href="#" class="favorite text-danger" title="favorite" data-toggle="tooltip"><i class="material-icons">favorite_border</i></a>
+                                        <a href="#" class="share" title="share" data-toggle="tooltip"><i class="material-icons">share</i></a>
                                     }
                                     @if (Model.userAuthentifie.username == "admin"){
                                         <a asp-controller="Artists" asp-action="Edit" asp-route-id="@artist.ID" class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
