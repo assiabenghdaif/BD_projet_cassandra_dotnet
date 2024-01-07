@@ -48,10 +48,10 @@ namespace BD_Projet_v_1_0_0.Models
         public override string ToString()
     {
         string tt="{";
-        foreach (var i in song){
-            tt+=i.Key+":"+i.Value+",";
-
-        }
+        if (song != null)
+            foreach (var i in song){
+                tt+=i.Key+":"+i.Value+",";
+            }
         tt+="}";
         return $"Artist: ID={ID},Stage_Name={Stage_Name},Full_Name={Full_Name},Date_of_Birth={Date_of_Birth},Original_group={Original_group},Debut={Debut},Company={Company},Country={Country},Height={Height},Weight={Weight},Birthplace={Birthplace},Gender={Gender},song={tt}";
     }

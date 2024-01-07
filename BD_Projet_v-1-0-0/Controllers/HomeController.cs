@@ -34,7 +34,6 @@ public class HomeController : Controller
         User user=dAL_DAO.getUserBy("user","username",username);
         myModel.userAuthentifie = user;
         TempData["username"]=username;
-        Console.WriteLine( myModel.userAuthentifie.username);
         return View(myModel);
     }
 

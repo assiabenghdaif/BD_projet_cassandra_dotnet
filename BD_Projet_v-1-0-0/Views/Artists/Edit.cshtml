@@ -2,6 +2,7 @@
 
 @{
     ViewData["Title"] = "Edit";
+    var artistUpdated = new Dictionary<string, string>();
 }
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -28,19 +29,19 @@
     <form class="row g-3" asp-action="Edit">
         <div class="col-4">
             <label asp-for="Stage_Name" class="form-label"></label>
-            <input asp-for="Stage_Name" class="form-control user-select-all">
+            <input asp-for="Stage_Name" id="Stage_Name" class="form-control user-select-all">
         </div>
         <div class="col-4">
             <label asp-for="Full_Name" class="form-label"></label>
-            <input asp-for="Full_Name" class="form-control user-select-all">
+            <input asp-for="Full_Name" id="Full_Name" class="form-control user-select-all">
         </div>
         <div class="col-4">
             <label asp-for="Original_group" class="form-label"></label>
-            <input asp-for="Original_group" class="form-control user-select-all">
+            <input asp-for="Original_group" id="Original_group" class="form-control user-select-all">
         </div>
         <div class="col-2">
             <label asp-for="Date_of_Birth" class="form-label"></label>
-            <input asp-for="Date_of_Birth" class="form-control user-select-all"> <!-- type="date" -->
+            <input asp-for="Date_of_Birth" id="Date_of_Birth" class="form-control user-select-all"> <!-- type="date" -->
         </div>
         <div class="col-3">
             <label asp-for="Birthplace" class="form-label"></label>
@@ -80,15 +81,38 @@
                 <option value="F" selected=@(Model.Gender=="F")>Female</option>
             </select>
         </div>
-        <div class="form-outline col-12">
-            <label asp-for="song" class="form-labe border-bottom"></label>
-            @for (int i = 0; i < Model.song.Count; i++){
-                <div class="input-group col-4">
-                    <span class="input-group-text">@Model.song.ElementAt(i).Key</span>
-                    <input asp-for="@Model.song.ElementAt(i).Value" value=@Model.song.ElementAt(i).Value class="form-control"/>
+        <div class="input-group form-outline col-12">
+            <label asp-for="song" class="form-label col-1 mb-2"></label>
+            <button type="button" class="btn btn-primary mb-2 rounded" data-bs-toggle="modal" data-bs-target="#staticBackdrop">New song</button>
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-            }
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+                </div>
+            </div>
+            </div>
         </div>
+        @for (int i = 0; i < Model.song.Count; i++){
+            <div class="input-group col-6" id="song-@i">
+                <span class="input-group-text">@Model.song.ElementAt(i).Key</span>
+                <input asp-for="@Model.song.ElementAt(i).Value" class="form-control"/>
+                <a onclick="deleteSong(@i)" class="delete" title="Delete" data-toggle="tooltip">
+                    <i class="material-icons text-danger input-group-text">&#xE872;</i>
+                </a>
+            </div>
+        }
+        
         <div class="col-12">
             <button type="submit" value="update" class="btn btn-primary">Save</button>
         </div>
@@ -99,7 +123,14 @@
     <div class="container">
         &copy; 2023 - K-Pop for All - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
     </div>
-</footer> 
+</footer>
+
 @section Scripts {
+    <script>
+        function deleteSong(index){
+            var songContainer = document.getElementById("song-" + index);
+            songContainer.remove();
+        }
+    </script>
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
